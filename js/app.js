@@ -131,7 +131,7 @@ $(document).ready(function(){
 			var selecaoDificuldade = "<select class='tag-selecao'>" +
 				  "<option value='1'>1 - Muito baixo</option>" +
 				  "<option value='1.5'>1,5 - Baixo</option>" +
-				  "<option value='2'>2 - Meio termo</option>" +
+				  "<option value='2'>2 - Médio</option>" +
 				  "<option value='2.5'>2,5 - Alto</option>" +
 				  "<option value='3'>3 - Muito Alto</option>" +
 				"</select>";
