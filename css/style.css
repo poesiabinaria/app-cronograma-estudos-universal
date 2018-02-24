@@ -1,0 +1,286 @@
+body{
+	margin: 0;
+	font-family: 'Arial', sans-serif;
+}
+
+input{
+	width: 280px;
+	padding: 6px;
+	margin: 0 10px 10px 0;
+}
+
+.input-pequeno{
+	width: 70px;
+	margin-left: 15px;
+}
+
+select{ padding: 6px; }
+
+button{
+	font-family: 'Arial', sans-serif;
+	font-size: 12px;
+	background-color: #ec008c;
+	color: white;
+	font-weight: bold;
+	padding: 8px 14px;
+	margin: 10px 6px 0 0;
+	border-radius: 2px;
+	border: 1px solid black;
+	transition: .15s linear;
+	cursor: pointer;
+}
+
+button:hover{ background-color: #ef32a3; }
+
+#btn-remover, #btn-nao{ background-color: #fc6767 }
+#btn-remover:hover, #btn-nao:hover{
+	background-color: #fc7676;
+}
+
+a{ color: black; font-weight: bold;}
+
+select:required:invalid { color: gray; }
+option[value=""][disabled] { display: none; }
+option { color: black; }
+
+h1{
+	font-size: 28px;
+	color: white;
+	margin: 0 0 10px 0;
+	text-shadow: 0 4px 10px rgba(0, 0, 0, .3);
+}
+
+h2{
+	color:white;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+h3{
+	font-size: 22px;
+	font-weight: normal;
+	margin-top: 50px;
+}
+
+h4 { font-size: 16px; }
+
+.titulo-sub-etapa{
+	text-align: center;
+	margin: 40px 0 50px 0;
+	border-top: 1px solid #d6d6d6;
+}
+
+.titulo-sub-etapa p{
+	color: #aaaaaa;
+	font-size: 15px;
+	font-style: italic;
+	margin: 0;
+}
+
+.msg-interativa{
+	padding: 10px 15px;
+	margin-left: -20px;
+	margin-top: 50px;
+	border-left: 4px solid #fc6767;
+	font-size: 17px;
+}
+
+.observacao{
+	font-size: 14px;
+	font-style: italic;
+	color: grey;
+	padding-bottom: 10px;
+}
+
+.btn-conclusao-etapa { text-align: right; margin-top: 50px;}
+.btn-conclusao-etapa button{ padding: 12px; }
+
+
+.btn-conclusao-etapa button:hover{ background-color: #fc6767; }
+
+.img-etapa {width: 16px;}
+
+
+#conteudo-secundario-etapa2,
+#conteudo-secundario-etapa3,
+#conteudo-secundario-resultado,
+.detalhes-calculo-conteudo{ display: none; }
+
+
+
+/*INÍCIO CABEÇALHO*/
+
+header{
+	background: #ec008c;  
+	background: -webkit-linear-gradient(to right, #fc6767, #ec008c); 
+	background: linear-gradient(to right, #fc6767, #ec008c); 
+
+
+	
+	/*background: #7F00FF;  
+	background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);  
+	background: linear-gradient(to right, #E100FF, #7F00FF); */
+
+
+
+	box-shadow: 0 0 15px rgba(0, 0, 0, .6);
+	padding: 35px 0;
+	margin-bottom: 80px;
+}
+
+.cbh-conteudo-principal{ text-align: right; }
+
+#logo{ 
+	float: right;
+	margin: 15px 40px 0 40px; 
+	-webkit-filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, .3));
+	 filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, .3)); 
+}
+
+.texto-cabecalho{
+	width: 800px;
+	display: inline-block;
+}
+
+#versao{ font-size: 20px; }
+
+#creditos-cabecalho{
+	padding: 2px 15px;
+	margin-top: 6px;
+	font-style: italic;
+	font-size: 12px;	
+	background-color: white;
+	color: black;
+	border-radius: 2px;
+	display: inline-block;
+	line-height: 18px;	
+}
+	
+/*FIM - Cabeçalho*/
+
+
+
+main{ display: block; padding: 0 11%; }
+
+.conteudo-etapa1 .titulo-sub-etapa:first-child{ border-top: none; }
+
+.conteudo-secundario-etapa{ margin-bottom: 80px; }
+
+.img-reticencias{margin-top: 20px;}
+
+.individual-input_sel-discipl{ display: block; }
+
+.titulo-sub-etapa h3{ margin-bottom: 10px; }
+
+.questionamento-dificuldade p{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.questionamento-dificuldade p:before{ content: "• "; }
+
+.lista-questionamentos select{ margin-left: 30px; }
+
+.botoes-sim-nao button{
+	margin-top: 0;
+	padding: 4px 10px;
+}
+
+.botoes-sim-nao button:first-child{ margin-left: 10px; }
+
+/*.box-coletar-numeros-tempo{ margin-bottom: 45px; }*/
+
+
+
+/*INÍCIO - Etapa Resultado*/
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    text-align: center;
+    padding: 14px;
+}
+
+th{
+	background-color: #fc6767;
+	color: white;
+	border:1px solid white;
+}
+
+tr:nth-child(odd) { background-color: #feefef; }
+
+#tbl-num-compart{ background-color: #ec008c; }
+
+/*Tabela 2*/
+
+.detalhes-calculo{ margin-top: 30px; }
+
+#btn-ver-detalhes{ padding: 6px 10px; }
+
+.detalhes-calculo-conteudo table th, .detalhes-calculo table td{
+	font-size: 14px;
+	background-color: white;
+	border: 1px solid #dddddd;
+	color: black;
+}
+
+.detalhes-calculo-conteudo table{ width: 48%; }
+
+.detalhes-calculo-conteudo table th{ text-align: right; }
+
+.detalhes-calculo-conteudo table tr:nth-child(odd) { background-color: #e5f6f7; }
+
+.detalhes-calculo-conteudo table td, .detalhes-calculo table th{ padding: 8px; }
+
+#legenda-tabela{ color: #aaaaaa; }
+
+/*Fim tabela 2*/
+
+#msg-final{
+	line-height: 22px;
+	margin-top: 40px;
+	border-top: 6px solid #fc6767;
+	border-right: 6px solid #fc6767;
+	text-align: justify;
+	padding: 20px;
+}
+
+#msg-final span{ font-weight: bold; }
+
+#msg-final a{ color: black; }
+
+#msg-bons-estudos{
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#legenda-tabela{
+	font-size: 12px;
+	font-style: italic;
+}
+
+/*FIM - Etapa Resultado*/
+
+
+
+footer{
+	background: #ec008c;  
+	background: -webkit-linear-gradient(to left, #fc6767, #ec008c); 
+	background: linear-gradient(to left, #fc6767, #ec008c); 
+	margin-top: 120px;
+	padding: 8px;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+}
+
+footer a{ color: white;}
+

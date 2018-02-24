@@ -1,0 +1,61 @@
+@media screen and (max-width:980px){
+
+	h1, h2{ margin: 8px 30px; }
+
+	#subtitulo-cabecalho{ margin: 15px 30px; }
+
+	.cbh-conteudo-principal{ text-align: center; }
+
+	.texto-cabecalho{ 
+		width: auto;
+		text-align: center;
+	}
+
+	#logo{
+		float: none;
+		margin: 0 0 15px 0;
+	}
+
+	#versao{
+		margin-top: 5px;
+		display: block;
+	}
+
+}
+
+
+
+
+@media screen and (max-width:700px){
+
+	input{ width: 50%; }
+
+	.todos-inputs-disciplinas, #botoes-add-rem{ text-align: center; }
+
+	.botoes-sim-nao{
+		display: block;
+		margin-top: 10px;
+		margin-left: 0;
+	}
+
+	.botoes-sim-nao button:first-child{ margin-left: 0; }
+
+	
+
+}
+
+
+
+
+@media screen and (max-width:320px){
+	
+	body{ width: 320px }
+}
+
+
+
+
+
+
+/*min: acima de
+max: até*/

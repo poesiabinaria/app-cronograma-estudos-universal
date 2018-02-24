@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href = "css/style.css">
+	<link rel = "stylesheet" href = "css/media-queries.css">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+	<title>Cronograma de Estudos Inteligente | Universal</title>
+</head>
+
+<body>
+	<header>
+		<div class="cbh-conteudo-principal">
+			<img id="logo" src="img/logo-book.png">
+			<div class="texto-cabecalho">
+				<h1> Cronograma de Estudos Inteligente <span id="versao"> (versão universal)</span> </h1>
+				<h2 id="subtitulo-cabecalho">Um aplicativo que te informa o número de sessões semanais que você deve alocar no seu cronograma de estudos, baseando-se no na importância das disciplinas para você, na sua relação com cada uma delas e no seu tempo disponível.</h2>
+				<h2 id="creditos-cabecalho">Cálculos baseados <a href="http://blogdofernandomesquita.com.br/compartimento-de-compromissos" target="_blank">neste</a> artigo do incrível <a href="http://blogdofernandomesquita.com.br/quem-e-voce" target="_blank">Fernando Mesquita!</a></h2>
+			</div>
+		</div>
+	</header>
+
+
+
+	<main role="main">
+		<div class="conteudo-etapa1" id="etapa1">
+			
+			<!-- Início do título e subtítulo da etapa 1 -->
+			<div class="titulo-sub-etapa">
+				<h3>1ª Etapa - Pesos da Importância 
+					<span>
+						<img id="indicacao-etp1" class="img-etapa" src="img/v-uncheck.png">
+					</span>
+				</h3>
+				<p>Nessa primeira etapa, serão coletados o nome das disciplinas e o grau de importância delas na sua vida.</p>
+			</div> <!-- Fim do título e subtítulo da etapa 1 -->
+
+			<!-- Início do conteúdo secundário da etapa 1 -->
+			<div id="conteudo-secundario-etapa1" class="conteudo-secundario-etapa">
+				<div class="interacao">
+					<p class="msg-interativa">Digite o nome de cada disciplina e selecione o quão importante ela é para você:</p>
+
+					<div class="todos-inputs-disciplinas">
+						<div id="input-select-1" class="individual-input_sel-discipl">
+							<input class="input-disciplina" placeholder="Ex: Inglês"
+							><select class='tag-selecao-importancia' required>
+							  <option value='' disabled selected>Importância</option> 
+							  <option value='1'>1 - Baixa</option>
+							  <option value='2'>2 - Média</option>
+							  <option value='3'>3 - Alta</option>
+							</select>
+						</div>
+
+						<div id="input-select-2" class="individual-input_sel-discipl">
+							<input class="input-disciplina" placeholder="Ex: Crochê"
+							><select class='tag-selecao-importancia' required>
+							  <option value='' disabled selected>Importância</option> 
+							  <option value='1'>1 - Baixa</option>
+							  <option value='2'>2 - Média</option>
+							  <option value='3'>3 - Alta</option>
+							</select>
+						</div>
+					</div>
+
+					<div id="botoes-add-rem">
+						<button id="btn-add-disciplina">(+) Nova Disciplina</button>
+						<button id="btn-remover" class="btn-rem-disciplina">(x) Remover Última</button>
+					</div>
+				</div>					
+			
+
+				<div class="btn-conclusao-etapa btn-etapa1">
+					<a id="href-etp1">
+						<button id="btn-concl-etapa1">Próxima Etapa ►►</button>
+					</a>
+				</div>
+
+			</div> <!-- Fim do conteúdo secundário da etapa 1 -->
+		</div> <!-- Fim de todo o conteúdo da etapa 1 -->
+			
+
+		
+		<div class="conteudo-etapa2" id="etapa2">
+			
+			<!-- Início do título e subtítulo da etapa 2 -->
+			<div class="titulo-sub-etapa">
+				<h3>2ª Etapa - Pesos Pessoais
+					<span>
+						<img id="indicacao-etp2" class="img-etapa" src="img/v-uncheck.png">
+					</span>
+				</h3>
+				<p>Aqui, será levada em conta a sua relação individual com todas as disciplinas informadas acima.</p>
+				<img id="reticencias-etp-2" class="img-reticencias" src="img/reticencias.png">
+			</div> <!-- Fim do título e subtítulo da etapa 2 -->
+
+			<!-- Início do conteúdo secundário da etapa 2 -->
+			<div id="conteudo-secundario-etapa2" class="conteudo-secundario-etapa">
+						
+				<div class="interacao">
+					<p class="msg-interativa">Selecione abaixo o seu nível de dificuldade para cada disciplina:</p>
+					<div class="questionamento-dificuldade"></div>
+				</div>
+
+				<div class="btn-conclusao-etapa">
+					<a id="href-etp2">
+						<button id="btn-concl-etapa2">Próxima Etapa ►►</button>
+					</a>
+				</div>
+
+			</div> <!-- Fim do conteúdo secundário da etapa 2 -->
+		</div> <!-- Fim de todo o conteúdo da etapa 2 -->
+
+
+		<div class="conteudo-etapa3" id="etapa3">
+			
+			<!-- Início do título e subtítulo da etapa 3 -->
+			<div class="titulo-sub-etapa">
+				<h3>3ª Etapa - Tempo de Estudos
+					<span>
+						<img id="indicacao-etp3" class="img-etapa" src="img/v-uncheck.png">
+					</span>
+				</h3>
+				<p>Nessa última etapa, o seu tempo será utilizado para o cálculo final da distribuição das sessões de estudos.</p>
+				<img id="reticencias-etp-3" class="img-reticencias" src="img/reticencias.png">
+			</div> <!-- Fim do título e subtítulo da etapa 3 -->
+
+			<!-- Início do conteúdo secundário da etapa 3 -->
+			<div id="conteudo-secundario-etapa3" class="conteudo-secundario-etapa">
+				<div class="box-coletar-numeros-tempo">
+					<p class="msg-interativa">Informe números sobre o seu tempo:</p>
+					<p>> Quantas <b>horas semanais</b> de estudos você tem disponível?</p>
+					<input id="qtd-horas-semanais" class="input-pequeno input-numerico" placeholder="Ex: 30">
+					<p>> Quanto tempo <b>(em minutos)</b> você gostaria de alocar para
+					cada sessão de estudo?</p>
+					<input id="qtd-minutos-secao" class="input-pequeno input-numerico" placeholder="Ex: 30">
+					<p>> E o intervalo <b>(em minutos)</b> de descanso entre as sessões de estudo, será de quanto tempo?</p>
+					<input id="qtd-minutos-intervalo" class="input-pequeno input-numerico" placeholder="Ex: 10">
+				</div>
+
+				<div class="btn-conclusao-etapa">
+					<a id="href-etp3">
+						<button id="btn-mostrar-resultado">Mostrar Resultado!</button>
+					</a>
+				</div>
+			
+			</div> <!-- Fim do conteúdo secundário da etapa 3 -->
+		</div> <!-- Fim de todo o conteúdo da etapa 3 -->
+
+
+		<div class="conteudo-resultado" id="etapa-resultado">
+			
+			<!-- Início do título e subtítulo da etapa resultado -->
+			<div class="titulo-sub-etapa">
+				<h3>O Resultado
+					<span>
+						<img id="indicacao-resultado" class="img-etapa" src="img/flag-uncheck.png">
+					</span>
+				</h3>
+				<p>Uma tabela que te ajudará a montar seu cronograma de estudos de uma maneira bem mais inteligente!</p>
+				<img id="reticencias-etp-resultado" class="img-reticencias" src="img/reticencias.png">
+			</div> <!-- Fim do título e subtítulo da etapa resultado -->
+
+			<!-- Início do conteúdo secundário da etapa resultado -->
+			<div id="conteudo-secundario-resultado" class="conteudo-secundario-etapa">
+				<div style="overflow-x:auto;">
+					<table id="tabela-principal">
+					  <tr>
+					    <th>Disciplina</th>
+					    <th>Peso Importância</th>
+					    <th>Peso Pessoal</th>
+					    <th>Peso Final</th>
+					    <th id="tbl-num-compart">Nº Sessões Semanais</th>
+					  </tr>
+					</table>
+				</div>
+
+				<div class="detalhes-calculo">
+
+					<button id="btn-ver-detalhes">Ver Detalhes Sobre o Cálculo</button>
+
+					<div class="detalhes-calculo-conteudo">
+						<h4>Detalhes sobre o cálculo:</h4>
+						<table>
+						  <tr>
+						   <th>Qtd. Horas Semanais:</th>
+						   <td id="td-horas-semanais"></td>
+						  </tr>
+						  <tr>
+						  	<th>Duração Sessão (em minutos):</th>
+						  	<td id="td-duracao-secao"></td>
+						  </tr>
+						  <tr>
+						  	<th>Duração Intervalo (em minutos):</th>
+						  	<td id="td-duracao-intervalo"></td>
+						  </tr>
+						  <tr>
+						  	<th>Qtd. Total Compartimentos Semanais:</th>
+						   <td id="td-total-compart"></td>
+						  </tr>
+						  <tr>
+						   <th>Soma Total Peso Final:</th>
+						   <td id="td-soma-peso-final"></td>
+						  </tr>
+						  <tr>
+						   <th>Relação Peso Final &amp; Compartimento:</th>
+						   <td id="td-relacao-peso-compart"></td>
+						  </tr> 
+						</table>
+						
+						<p id="legenda-tabela">
+						# PesoFinal = (PesoEdital x PesoPessoal)<br>
+						# SomaTotalPesoFinal = (PesoFinal1 + PesoFinal2 + PesoFinal3 + ...)<br>
+						# Qtd.TotalCompartimentosSemanais = (((60)/(DuraçãoSessão + DuraçãoIntervalo))/Qtd.HorasSemanais)<br>
+						# RelaçãoPesoFinal&amp;Compartimento = (Qtd.TotalCompartimentosSemanais/SomaTotalPesoFinal)<br>
+						# NºSessõesSemanais = (PesoFinal x RelaçãoPesoFinal&amp;Compartimento)<br>
+						</p>
+					</div>
+				</div>
+
+				<div id="msg-final">
+					<h4>Interpretando...</h4>
+					<p>
+					Pronto! Você agora deve montar o seu cronograma distribuindo o número de sessões de estudos para cada semana. Um exemplo: toda semana, você deve estudar <span id="dscpl-sessoes-ex"></span> (ou compartimentos) da sua disciplina <span id="dscpl-nome-ex"></span>, com cada sessão durando <span id="duracao-sessao-ex"></span> e tendo <span id="intervalo-descanso-ex"></span> de intervalo de descanso entre uma sessão e outra. Na próxima semana, a mesma coisa. Se você respeitar os números da tabela, verá que todas as sessões + intervalos irão se encaixar nas suas <span id="horas-semanais-ex"></span> semanais. Sinta-se livre para fazer adaptações caso elas sejam necessárias. Para entender o cálculo a fundo, leia o <a href="http://blogdofernandomesquita.com.br/compartimento-de-compromissos" target="_blank"> artigo</a> de Fernando Mesquita. Ele ainda dá dicas de como montar o cronograma!
+				</p>
+				<p id="msg-bons-estudos">Bons estudos! :)</p>
+				</div>
+			</div> <!-- Fim do conteúdo secundário da etapa resultado -->
+		</div><!-- Fim de todo o conteúdo da etapa resultado -->
+	</main>
+
+
+
+	<footer>
+		Desenvolvido com ❤ por <a href="https://www.facebook.com/gabriel.mendes.web" target="_blank"> Gabriel</a>
+	</footer>
+
+
+
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
