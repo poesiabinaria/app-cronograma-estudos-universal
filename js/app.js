@@ -64,7 +64,7 @@ $(document).ready(function(){
 	$("#btn-add-disciplina").click(function(){
 
 		var selecaoTipo = "<select class='tag-selecao-importancia' required>" +
-							  "<option value='' disabled selected>Importância</option>" +
+							  "<option value='' disabled selected>Prioridade</option>" +
 							  "<option value='1'>1 - Baixa</option>" +
 							  "<option value='2'>2 - Média</option>" +
 							  "<option value='3'>3 - Alta</option>" +
